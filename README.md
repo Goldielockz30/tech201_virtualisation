@@ -371,7 +371,16 @@ The program 'status' is currently not installed. To run 'status' please ask your
 config.vm.network "private_network", ip: "192.168.10.100"  
 
 - This will give our vm an ip address
-- If we type the IP address in the web browser we will get an error page
+
+- To upload images onto this README
+- First save the image files in the same folder as the README.md
+- Then use the following code to upload your file   
+ ``` <img src="name of the image with extension"> ```
+
+- If we type the IP address in the web browser now we will get an error message
+
+<img src="Error message.png">
+
 
 - So next in the git bash terminal we need to type exit to get out
 
@@ -420,3 +429,5 @@ vagrant reload
 
 ```
 - Now if we type in the ip address "192.168.10.100" into our browser we will get the welcome page for our web server instead of the 404 error page
+
+<img src="welcome message.png">
