@@ -46,7 +46,7 @@ DevOps can mean different things to different people, its becomming a better und
 - For example how powerful a machine do we need to conduct a task? Do we need certain servers running? etc.
 
 
-# Infrastructure and Architecturs
+# Infrastructure and Architecture
 - We will learn to build monoliths first
 - Monolith - all on the same physical machine - considered bad practice
 - 2 tier                            - 2 tier
