@@ -87,14 +87,15 @@ DevOps can mean different things to different people, its becomming a better und
 so first we need
 
 on our Local Host - Win/mac/linux
+- We will need to Install the following
 
-Vagrant installed
-Virtual box
-Ruby
-Bash
-Git
-SSH
-
+Vagrant  
+Virtual box  
+Ruby  
+Bash  
+Git  
+SSH  
+ 
 
 - Vagrant - gives instructions to virtual box and vm.
 
@@ -103,7 +104,7 @@ SSH
 - Virtual Machine - This is the environment we will create so we can work in a standardised environment.
   Hyper v can cause a problem (This needs to change in the turn windows features on or off, recommend turning hyper - v off, but keep on/checked virtual machine platform and windows hypervisor platform ) 
 
-- Developer - This is the reason we are creating this environment, to standardise the environments for us and the developers.
+- Developer - The reason we are creating this environment, is to standardise the environments for us and the developers.
 
 
 
