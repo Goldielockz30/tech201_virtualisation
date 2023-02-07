@@ -133,9 +133,10 @@ https://www.virtualbox.org/wiki/Downloads
 - Install vagrant 
 when its installed check the version in git bash terminal
 $ vagrant --version
-- This is what you should see
+- This is what you should see  
+```
 Vagrant 2.3.4
-
+```
 Struggling to get into the correct place?
 - In git bash type pwd to see current path
 if you are in the wrong place type 
