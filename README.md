@@ -61,3 +61,21 @@ DevOps can mean different things to different people, its becomming a better und
 # Risk register
 - this shows the description eg. production server fails, the chance of occurance eg. medium, potential damage eg. loss of revenue, and the risk for your business if these things were to happen eg. high
 
+
+# Dev Environments
+
+- An area where developers can write their code, run the code, test the code
+- Its a space on some machine somewhere which has all programs installed which enables them to write, test and run the code. 
+- Our job is to create these environments for the dev team
+- DevOps engineere create the Dev environment 
+- We can standardise things, ensuring everyone can collaborate well, making sure that everyone is on the exact same system which makes everyones job easier.
+
+
+# What makes a good Dev Environment?
+
+- User friendly, fast and robust.
+- It should be easy to update. - GIT can really help us with this - version control
+- It should match the production environment as closely as possible
+- It should be the same for everyone, everywhere. * A small difference is the programs and environments can break the applications.
+- It should only support one application. * App1 requires version 1.1 - App2 needs version 1.4, this wont work because its best practice to use the same version, * App1 needs a proram and that program conflicts with another program that App2 needs.
+
