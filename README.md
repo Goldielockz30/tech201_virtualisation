@@ -131,8 +131,8 @@ https://www.virtualbox.org/wiki/Downloads
 # Vagrant
 
 - Install vagrant 
-when its installed check the version in git bash terminal
-$ vagrant --version
+when its installed check the version in git bash terminal using  
+ --version
 - This is what you should see  
 ```
 Vagrant 2.3.4
