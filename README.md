@@ -13,8 +13,8 @@ DevOps can mean different things to different people, its becomming a better und
 # Google data centres
 - The engine of the internet, there are rows uopn rows of machines
 - they managed zero lost time incedents
-- they offer a level of secuity unmatches
-- their IS team second to none - membeers have written the books 
+- they offer a level of secuity unmatched
+- their IS team second to none - members have written the books 
 - protecting user information is their priority
 - custom server racks to optimise the computers
 - pre authorise accessed list for different levels of security at different points of entry
