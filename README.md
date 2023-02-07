@@ -87,7 +87,7 @@ DevOps can mean different things to different people, its becomming a better und
 - So first we need
 
 - On our Local Host - Win/mac/linux
-- We will need to Install the following
+- Then we will need to Install the following
 
 Vagrant  
 Virtual box  
