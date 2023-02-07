@@ -428,6 +428,6 @@ vagrant reload
 ==> default: flag to force provisioning. Provisioners marked to run always will still run.
 
 ```
-- Now if we type in the ip address "192.168.10.100" into our browser we will get the welcome page for our web server instead of the 404 error page
+- Now if we type in the ip address "192.168.10.100" into our browser we will get the welcome page for our web server instead of the error page
 
 <img src="welcome message.png">
