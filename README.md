@@ -47,11 +47,11 @@ DevOps can mean different things to different people, its becomming a better und
 
 
 # Architecturs
-- we will learn to build monoliths first
+- We will learn to build monoliths first
 - Monolith - all on the same physical machine - considered bad practice
 - 2 tier                            - 2 tier
 
-- we will learn to make the monolith into microservices
+- We will learn to make the monolith into microservices
 - Mocroservices - 
 - Containers allow us to create microservice architectures
 
