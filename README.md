@@ -110,9 +110,10 @@ SSH
 
 # Ruby 
 
-- Install ruby from online (highlighted version)
+- Install ruby from online (highlighted version)  
+https://rubyinstaller.org/downloads/
 
-- In git bash type  
+- To ensure you have Ruby downloaded, in git bash type  
  ruby --version
 
 - This is what will be returned  
