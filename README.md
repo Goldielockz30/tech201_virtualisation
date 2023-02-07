@@ -20,7 +20,7 @@ DevOps can mean different things to different people, its becomming a better und
 - pre authorise accessed list for different levels of security at different points of entry
 - laser beam intruder detection
 - at the time of the video they had changed cooling technologies at least 5 times, cooling system running 24/7 using water in coils 
-- the pace on innovation and challenging the ways they do things
+- the face on innovation and challenging the ways they do things
 - we used to use on prem services but now the cloud has enabled us to use data centres like google, with that we can do things that we may not have been able to do on premise
 
 # Four areas we can look at as DevOps engineers
