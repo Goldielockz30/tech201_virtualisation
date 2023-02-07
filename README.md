@@ -150,7 +150,9 @@ Type the following
 
 - vagrant init ubuntu/xenia164
 
-you will see
+then you will see the vagrant folder 
+
+
 
 - initialise a vagrant file in this folder
 - then tell vagrant what type of system we want to use, 
@@ -165,7 +167,7 @@ the comments in the Vagrantfile as well as documentation on
 
 to connect to the virtual machine
 - vagrant ssh
-- la -a              this shows you hidden files and folders
+- ls -a              this shows you hidden files and folders
 
 we will use super user 
 - sudo apt-get               this is used to get something to the internet
