@@ -4,7 +4,7 @@
 
 DevOps can mean different things to different people, its becomming a better understood concept.
 
-# Development and Operations - breaking silos -
+# Development and Operations - breaking Silos -
 - working together
 - shared responsibilities
 - deploy infrastructure as code
@@ -26,22 +26,22 @@ DevOps can mean different things to different people, its becomming a better und
 # Four areas we can look at as DevOps engineers
 
 
-- Ease of use
+### Ease of use
 - Other teams are going to use the tools we create. They wont use them if they are not user friendly
 - we need to make sure that everything we make and as user friendly as possible
 - if devs do not use our tools their will be headaches/ delays in development down the line
 
 
-- flexibility
+### flexibility
 - It can be easy to get locked in to using a particular product, tool or software. And it then becomes hard for the company to keep up with industry changes.
 - Everything the company uses should be easily changed or updated as the business needs change.
 
-- Robustness
+### Robustness
 - We need as close to 100% uptime as possible for our company's services.
 - We are responsible for achieving this as DevOps Engineers
 
 
-- Cost
+### Cost
 - Cost is often overlooked. Wneed to make sure the company is being as efficent as possible in its tech dealings.
 - For example how powerful a machine do we need to conduct a task? Do we need certain servers running? etc.
 
