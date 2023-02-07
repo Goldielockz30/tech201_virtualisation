@@ -84,9 +84,9 @@ DevOps can mean different things to different people, its becomming a better und
 # 
 
 - Virtualisation ensures Standardisation
-so first we need
+- So first we need
 
-on our Local Host - Win/mac/linux
+- On our Local Host - Win/mac/linux
 - We will need to Install the following
 
 Vagrant  
