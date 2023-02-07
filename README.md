@@ -77,7 +77,7 @@ DevOps can mean different things to different people, its becomming a better und
 - It should be easy to update. - GIT can really help us with this - version control
 - It should match the production environment as closely as possible
 - It should be the same for everyone, everywhere. * A small difference in the programs and environments can break the applications.
-- It should only support one application. * App1 requires version 1.1 - App2 needs version 1.4, this wont work, its best practice to use the same version, * App1 needs a proram and that program conflicts with another program that App2 needs.
+- It should only support one application. * App1 requires version 1.1 - App2 needs version 1.4, this wont work, its best practice to use the same version, * App1 needs a program and that program conflicts with another program that App2 needs.
 
 
 
