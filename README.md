@@ -32,7 +32,7 @@ DevOps can mean different things to different people, its becomming a better und
 - if devs do not use our tools their will be headaches/ delays in development down the line
 
 
-### flexibility
+### Flexibility
 - It can be easy to get locked in to using a particular product, tool or software. And it then becomes hard for the company to keep up with industry changes.
 - Everything the company uses should be easily changed or updated as the business needs change.
 
