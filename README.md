@@ -370,12 +370,53 @@ The program 'status' is currently not installed. To run 'status' please ask your
 
 config.vm.network "private_network", ip: "192.168.10.100"  
 
-
 - This will give our vm an ip address
-- Now if we type in the ip address we will get the welcome page for our web server instead of the 404 error page
-- Now in git bash terminal we need to type exit to get out
+- If we type the IP address in the web browser we will get an error page
+
+- So next in the git bash terminal we need to type exit to get out
 
 exit        
-- and then to reload, this will bring it back up again with the new settings  
+- You should see this message
+```
+logout
+```
+- Then to reload, this will bring it back up again with the new settings  
 
 vagrant reload       
+- You will see the following
+
+```
+==> default: Attempting graceful shutdown of VM...
+==> default: Checking if box 'ubuntu/xenial64' version '20211001.0.0' is up to date...
+==> default: Clearing any previously set forwarded ports...
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+    default: Adapter 2: hostonly
+==> default: Forwarding ports...
+    default: 22 (guest) => 2222 (host) (adapter 1)
+==> default: Running 'pre-boot' VM customizations...
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+==> default: Machine booted and ready!
+==> default: Checking for guest additions in VM...
+    default: The guest additions on this VM do not match the installed version of
+    default: VirtualBox! In most cases this is fine, but in rare cases it can
+    default: prevent things such as shared folders from working properly. If you see
+    default: shared folder errors, please make sure the guest additions within the
+    default: virtual machine match the version of VirtualBox you have installed on
+    default: your host and reload your VM.
+    default:
+    default: Guest Additions Version: 5.1.38
+    default: VirtualBox Version: 6.1
+==> default: Configuring and enabling network interfaces...
+==> default: Mounting shared folders...
+    default: /vagrant => C:/Users/ahimb/sample_repo/tech201_virtualisation
+==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`
+==> default: flag to force provisioning. Provisioners marked to run always will still run.
+
+```
+- Now if we type in the ip address "192.168.10.100" into our browser we will get the welcome page for our web server instead of the 404 error page
