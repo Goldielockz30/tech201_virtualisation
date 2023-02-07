@@ -116,7 +116,7 @@ https://rubyinstaller.org/downloads/
 - To ensure you have Ruby downloaded, in git bash type  
  ruby --version
 
-- This is what will be returned  
+- This is what should be returned  
 ```
 ruby 3.1.3p185 (2022-11-24 revision 1a6b16756e) [x64-mingw-ucrt]
 ```
