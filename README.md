@@ -28,7 +28,7 @@ DevOps can mean different things to different people, its becomming a better und
 
 - Ease of use
 - Other teams are going to use the tools we create. They wont use them if they are not user friendly
-- # we need to make sure that everything we make and as user friendly as possible
+- we need to make sure that everything we make and as user friendly as possible
 - if devs do not use our tools their will be headaches/ delays in development down the line
 
 
@@ -56,7 +56,8 @@ DevOps can mean different things to different people, its becomming a better und
 - Containers allow us to create microservice architectures
 
 
-# Tooling
-- Risk register
+### Tooling
+
+# Risk register
 - this shows the description eg. production server fails, the chance of occurance eg. medium, potential damage eg. loss of revenue, and the risk for your business if these things were to happen eg. high
 
