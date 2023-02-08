@@ -56,7 +56,6 @@ DevOps can mean different things to different people, its becomming a better und
 - Containers allow us to create microservice architectures
 
 
-### Tooling
 
 # Risk register
 - this shows the description eg. production server fails, the chance of occurance eg. medium, potential damage eg. loss of revenue, and the risk for your business if these things were to happen eg. high
@@ -81,13 +80,15 @@ DevOps can mean different things to different people, its becomming a better und
 
 
 
-# 
+
 
 - Virtualisation ensures Standardisation
 - So first we need
 
 - On our Local Host - Win/mac/linux
 - Then we will need to Install the following
+
+# Tooling
 
 Vagrant  
 Virtual box  
@@ -130,7 +131,7 @@ https://www.virtualbox.org/wiki/Downloads
 
 # Vagrant
 
-- Install vagrant, 
+- Install vagrant, https://developer.hashicorp.com/vagrant/downloads  
 when its installed check the version in git bash terminal using  
  --version
 - This is what you should see  
