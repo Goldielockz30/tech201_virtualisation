@@ -142,9 +142,9 @@ Struggling to get into the correct place?
 - In git bash type pwd to see current path
 if you are in the wrong place type 
 - cd ..                 to get out of the wrong place , next
-- cd sample_repo
-this is where you want to be, C:\Users\ahimb\sample_repo
-- cd tech201_virtualisation
+- cd  (wherever your folder is located) for me it was sample_repo  
+this is where you want to be , C:\Users\ahimb\sample_repo
+- cd tech201_virtualisation , C:\Users\ahimb\sample_repo\tech201_virtualisation
 - ls
 - git status
 
