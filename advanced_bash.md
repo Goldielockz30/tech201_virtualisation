@@ -196,3 +196,193 @@ ls f*      = show me only files in folders with f
 ls t*      =
 
 ls file*    =
+
+#####
+
+# Linux permissions:
+
+r (read)
+w (write)
+x (execute)
+u - user
+g - group
+o - other
+
+owner - group - others
+			read    write    Execute
+
+Setting:            0       0        0
+Binary Value:
+			  4        2        1
+
+4 + 2  + 1 = 7
+777 -> All permissions for all users/groups/other
+
+755
+
+7  = all perm for the owner
+5  =  group and other can read and execute  (4 + 1)
+
+541  = 
+
+764  =
+
+chmod    = to chaange permissions
+
+ls -l testfile.txt        = given permissions
+
+
+sudo chmod u+x testfile.txt
+
+ls -l testfile.txt
+
+
+sude chmod u-x testfile.txt
+
+ls -l testfile.txt
+
+sude chmod 777 testfile.txt     = give permissions to everyone
+
+
+
+
+
+
+to get to task manager in linux tpye
+top
+this might lock up your terminal
+control + c to get back in 
+vagrant ssh
+
+
+ps     = this will show whats happening in your current terminal
+
+ps aux     = this shows you whats going on in the whole system
+
+
+
+
+sleep 120 &
+
+ps
+
+kill 2201
+
+ps
+
+sleep 120 &
+
+ps
+
+kill -9 2210
+
+
+sleep 5
+
+sleep 5 &           =   it runs it in the background so it doesnt lock you out
+
+
+
+sleep 120
+
+fg
+
+ps
+
+
+ls 
+
+sudo apt-get update
+
+sudo apt install tree -y
+
+#####
+
+we added two folders in the same folder as our vm
+app and environment
+what we want to sync and where we want to put it
+
+config.vm.synced_folder "app", "/home/vagrant/app"
+
+then 
+
+
+vagrant up
+
+then open gitbash as admin
+
+vagrant ssh        =    from git bash
+
+once your in ubuntu
+
+ls 
+
+this shows app
+
+cd app
+
+
+
+from vs bash terminal
+
+cd environment x2
+
+cd spec-tests
+
+
+gem install bundler
+
+bundle
+
+rake spec
+
+
+#####
+next we will install these things so that our environment is where we need it to be
+
+sudo apt-get update -y
+
+sudo apt-get upgrade -y
+
+sudo apt-get install nginx -y     =  sudo systemctl start nginx 
+
+
+
+
+check web browser to make sure its working "http://192.168.10.100/"
+
+rake spec
+
+
+
+sudo apt-get install python-software-properties        =   we need a particular version
+
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -        = once you install nodejs
+ overwrite to this particular version
+
+
+sudo apt-get install nodejs -y      =     this is the next step
+
+
+nodejs -v      =  check the version
+
+rake spec
+
+we needed nodejs in order to get pm2
+
+rake spec to check 
+
+
+cd app 
+
+cd app 
+ls
+
+npm install
+npm -v
+
+node app.js
+
+
+192.168.10.100:3000
+
