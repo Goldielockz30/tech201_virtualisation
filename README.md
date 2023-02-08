@@ -176,10 +176,12 @@ the comments in the Vagrantfile as well as documentation on
 ```
 - The ruby code in the vagrant file will tell the vm what to do
 
-- Next type 
-vagrant up 
+- Next type  
+
+  vagrant up 
 
 - Next,  to connect to the virtual machine type   
+
 
   vagrant ssh
 
