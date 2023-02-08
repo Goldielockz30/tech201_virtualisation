@@ -360,7 +360,7 @@ Processing triggers for ufw (0.35-0ubuntu2) ...
 sudo systemctl start nginx
 
 - You can press up and down buttone on key pad to check through commands  
-next tpype ..   
+next type ..   
 status nginx
 
 ```
