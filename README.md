@@ -154,7 +154,7 @@ Permissions
 Next 
 - Type the following in git bash
 
-vagrant init ubuntu/xenia164
+vagrant init ubuntu/xenial64
 
 - Then you will see the vagrant folder locally in the tech201_virtualisation folder and in vs code
 
