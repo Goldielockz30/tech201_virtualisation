@@ -156,27 +156,26 @@ Next
 
 vagrant init ubuntu/xenial64
 
-- Then you will see the vagrant folder locally in the tech201_virtualisation folder and in vs code
-
-
-#### notes
-- Vagrant init - this will initialise a vagrant file in this folder
-- ubuntu/xenial64 - then this tells vagrant what type of system we want to use, shown below
-
-So type the following in git bash
-
-vagrant init ubuntu/xenial64
-
-- This is what you will see 
+- This is what you will see in the git bash terminal
 ```
 A `Vagrantfile` has been placed in this directory. You are now
 ready to `vagrant up` your first virtual environment! Please read
 the comments in the Vagrantfile as well as documentation on
 `vagrantup.com` for more information on using Vagrant.
 ```
-- The ruby code in the vagrant file will tell the vm what to do
 
-- Next type  
+- You will also see the vagrant folder locally in the tech201_virtualisation folder and in vs code
+
+
+#### notes
+- Vagrant init - this will initialise a vagrant file in this folder
+- ubuntu/xenial64 - then this tells vagrant what type of system we want to use, shown below
+- this step creates a vagrant file which will be used to communicate with virtualbox to create a virtual machine
+
+- The ruby code in the vagrant file will tell the virtual box what to do
+
+
+- Next, type  
 
   vagrant up 
 
