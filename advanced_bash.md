@@ -32,7 +32,7 @@ this will show all the system information
 MINGW64_NT-10.0-22621 Goldielockz 3.3.6-341.x86_64 2022-09-05 20:28 UTC x86_64 Msys
 
 ```
-
+```
 uname -s  - system information
 
 uname -r  - this shows you the release 
@@ -48,9 +48,10 @@ we can also combine these commands and they will show the information you specif
 uname -si 
 
 uname -srp    
-
+```
 
 ####
+```
 clear to clear the screen
 
 
@@ -70,7 +71,7 @@ cd ~       = tilda - if your root is not your home directory, this will take you
 ls  = shows you the files that are inside where you currently are
 
 ls -l  = l means long format, this will tell you the permissions on the files and folders that are within your folder
-
+```
 
 absolute path is from the root  of the machine
 
