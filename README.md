@@ -133,7 +133,7 @@ https://www.virtualbox.org/wiki/Downloads
 
 - Install vagrant, https://developer.hashicorp.com/vagrant/downloads  
 when its installed check the version in git bash terminal using  
- --version
+vagrant --version
 - This is what you should see  
 ```
 Vagrant 2.3.4
@@ -159,7 +159,7 @@ vagrant init ubuntu/xenial64
 - Then you will see the vagrant folder locally in the tech201_virtualisation folder and in vs code
 
 
-Next
+#### notes
 - Vagrant init - this will initialise a vagrant file in this folder
 - ubuntu/xenial64 - then this tells vagrant what type of system we want to use, shown below
 
@@ -176,8 +176,10 @@ the comments in the Vagrantfile as well as documentation on
 ```
 - The ruby code in the vagrant file will tell the vm what to do
 
+- Next type 
+vagrant up 
 
-Next to connect to the virtual machine type   
+- Next,  to connect to the virtual machine type   
 
   vagrant ssh
 
