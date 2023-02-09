@@ -300,14 +300,13 @@ then open gitbash as admin
 
 ```vagrant ssh ```          from git bash terminal
 
-once your in ubuntu
+now your in ubuntu
 
 ``` ls ```
 
 this shows
  app
-
-```cd app```     
+    
 
 from vs bash terminal
 
