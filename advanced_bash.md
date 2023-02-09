@@ -1,83 +1,77 @@
-- Today we will be looking at the shell and how it interacts with the computer
+Today we will be looking at the shell and how it interacts with the computer
 
-
+There are different levels
 - bare metal
 - Hardware level
 - Kernal - its the core of the operating system , how it works and how it does what we want it to do.
 
 - security
 
-user level - 
+user level - this is where we will be
 - shell (Command Line)
 
-- GUI   - using a mouse to navigate
-
+- GUI   - eg. using a mouse to navigate
 
 - Application
 
 ####
-
-uname  - this shows you system information
+ # Advanced Bash
+```uname```  - this shows you system information
 ```
 MINGW64_NT-10.0-22621
 
 ```
 
-a flag is what we put after a linux command to be more specific, we can use them in lots of different ways...
+- A flag is what we put after a linux command to be more specific, we can use them in lots of different ways...
 
-uname -a  or use the long version, uname --all
+```uname -a ``` or use the long version,``` uname --all```
 this will show all the system information
 
 ```
 MINGW64_NT-10.0-22621 Goldielockz 3.3.6-341.x86_64 2022-09-05 20:28 UTC x86_64 Msys
 
 ```
-```
-uname -s  - system information
 
-uname -r  - this shows you the release 
+```uname -s ``` - system information
 
-uname -m  - this is the hardware name
+``` uname -r ``` - this shows you the release 
 
-uname -i    - hardware platform
+```uname -m ``` - this is the hardware name
 
-uname -o    - os
+```uname -i ```   - hardware platform
+
+```uname -o ```   - os
 
 we can also combine these commands and they will show the information you specify
 
-uname -si 
+```uname -si ```
 
-uname -srp    
-```
+```uname -srp    ```
+
 
 ####
-
-``` clear ``` to clear the screen
-
+# Navigation 
+``` clear ``` - use this to to clear the screen
 
 cd  means change directory
 
-```cd .ssh```     = going into the .ssh
+```cd .ssh``` -going into the .ssh
 
-``` cd .. ```   = goes back out of the folder you are in
+``` cd .. ```  - goes back out of the folder you are in
 
-``` cd ../.. ```    = goes up two levels
-
-
-``` cd / ```   to get all the way out to the root directory
-
-``` cd ~ ```   tilda - if your root is not your home directory, this will take you to your home directory
-
-``` ls ``` shows you the files that are inside where you currently are
-
-``` ls -l ``` l means long format, this will tell you the permissions on the files and folders that are within your folder
+``` cd ../.. ```  - goes up two levels
 
 
-absolute path is from the root  of the machine
+``` cd / ```  - to get all the way out to the root directory
 
-relative path is where it is from where you are now
+``` cd ~ ```  - tilda - if your root is not your home directory, this will take you to your home directory
 
-### Absolute Path
+``` ls ``` - shows you the files that are inside where you currently are
+
+``` ls -l ``` - l means long format, this will tell you the permissions on the files and folders that are within your folder
+
+
+### Absolute Path - is from the root  of the machine
 - Linux/Mac
 
 /users/username/Documents/myfile.txt
@@ -89,38 +83,43 @@ C:\users\username\Documents\myfilemtxt
 - Web URLs
 http://www.mysite.com/myfolder/subfolder/sub/sub2/page1.html
 
-### Relative path (from where we are)  
+### Relative path (from where we are now)  
 
 /Folder1/Folder2/file.txt
 
+# Creating files and Folders
+``` cd ~ ```cd  to home we can do that from the root aswell
 
-``` cd / ```cd  to home we can do that from the root
+```cd sample_repo```    
 
+```cd tech201_virtualisation ```
 
  ``` vagrant ssh ```  to go into linux terminal
 
-
+### To create a file
 ``` touch emptyfile.txt ```
 
 ``` ls  ```
 
 ``` cd ~  ``` takes you back to home as a user for vagrant 
 
-``` nano ``` 
+``` touch ```  - this creates an empty file 
 
-``` nano myfile.txt ```  ctrl + X to exit Y and enter to save
+``` nano emptyfile.txt  ``` to edit this file ,  ctrl + X to exit Y and enter to save
 
-``` nano emptyfile.txt  ``` to edit this file
+``` cat ```  - this shows contents of the file
+
+### To create a new folder
 
 ``` mkdir ```      make directorr
 
 ``` mkdir new_folder ```
 
 
-``` mkdir "folder" ```
+``` mkdir "folder" ``` - To name the folder
 
 
-to copy a file
+### To copy a file
 
 ``` cp myfile.txt copied_file.txt ```
 
@@ -148,13 +147,13 @@ home directory
 ``` rsync -r new_folder new_folder2 ```
 
 
-to move a file two folders along
+### To move a file two folders along
 ``` cd new_folder ```
 ``` mv myfile.txt ../new_folder ```
 
 
 
-to delete files
+### To delete files
 
 ``` rm  ``` this will delete immediately without checking
 
@@ -163,7 +162,7 @@ to delete files
 r means recursive   
 f is to force
 
-to delete a folder and everything inside
+### To delete a folder and everything inside
 
 ``` rm -rf new_folder ```  to delete everything inside the folder    
 ``` rm -rf ``` never do this  
@@ -178,16 +177,16 @@ to delete a folder and everything inside
 ``` man -k change ``` this will bring up commands that have the change keyword
 ``` man -k log  ```this will do the same for log
 
-to search use grep , looking for the word test
+### To search in linux use grep , 
 
-``` grep test  ```
+``` grep test  ``` - eg. looking for the word test
 
-``` grep test * ```      search in all files in this folder
+``` grep test * ```  - search in all files in this folder
 
-``` grep test * -R ```   It tells linux to search the whole folder for all instances and also search all the folders within this folder 
+``` grep test * -R ```  - It tells linux to search the whole folder for all instances and also search all the folders within this folder 
 
 
-``` ctrl + c ```    if it hangs up o rlocks you out because of the previous command
+``` ctrl + c ```   - If it hangs up or locks you out because of the previous command
 
 ``` ls f* ``` show me only files in folders with f
 ``` ls t* ```     show me only files in folders with t
