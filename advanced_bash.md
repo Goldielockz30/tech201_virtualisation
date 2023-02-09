@@ -347,27 +347,27 @@ check web browser to make sure its working "http://192.168.10.100/" `
  overwrite to this particular version
 
 
-sudo apt-get install nodejs -y      =     this is the next step
+```sudo apt-get install nodejs -y  ```        this is the next step
 
 
-nodejs -v      =  check the version
+```nodejs -v   ```    check the version
 
-rake spec
+```rake spec```
 
 we needed nodejs in order to get pm2
 
-rake spec to check 
+```rake spec ``` to check 
 
 
-cd app 
+```cd app ```
 
-cd app 
-ls
+```cd app ``` again if it is nested
+```ls```
 
-npm install
-npm -v
+```npm install```
+```npm -v```
 
-node app.js
+```node app.js```
 
 
 192.168.10.100:3000
