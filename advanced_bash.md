@@ -197,18 +197,18 @@ f is to force
 
 # Linux permissions:
 
-r (read)
-w (write)
-x (execute)
-u - user
-g - group
-o - other
+r (read)  
+w (write)  
+x (execute)  
+u - user  
+g - group  
+o - other  
 
-owner - group - others
-			       read    write    Execute
+owner - group - others  
+			       read    write    Execute  
 
 Setting:            0       0        0
-Binary Value:
+Binary Value:  
 			        4        2        1
 
 4 + 2  + 1 = 7
