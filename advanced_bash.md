@@ -337,7 +337,7 @@ check web browser to make sure its working "http://192.168.10.100/" `
 
 ```sudo apt-get install python-software-properties   ```       we need a particular version
 
-```curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash - ```        once you ```install nodejs```
+```curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash - ```        once you install nodejs
  overwrite to this particular version
 
 
@@ -358,7 +358,7 @@ we needed nodejs in order to get pm2
 ```cd app ``` again if it is nested
 ```ls```
 
-```npm install```  sudo npm install pm2 -g
+```npm install```  or ```sudo npm install pm2 -g```
 ```npm -v```
 
 ```node app.js```
