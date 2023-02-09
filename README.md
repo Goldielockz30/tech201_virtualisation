@@ -435,3 +435,70 @@ vagrant reload
 - Now if we type in the ip address "192.168.10.100" into our browser we will get the welcome page for our web server instead of the error page
 
 <img src="welcome message.png">
+
+
+
+
+# Vagrant File
+
+```
+
+Vagrant.configure("2") do |config|
+
+  config.vm.box = "ubuntu/xenial64"
+  config.vm.network "private_network", ip: "192.168.10.100"
+
+  # Sync the app folder
+  config.vm.synced_folder "app", "/home/vagrant/app"
+
+
+  # Provisioning
+  config.vm.provision "shell", path: "provision.sh"
+
+
+
+end
+
+
+```
+
+# Provision
+
+```
+#!/bin/bash
+
+
+# Update and upgrade
+sudo apt-get update -y
+sudo apt-get upgrade -y
+
+# Install nginx
+sudo apt-get install nginx -y
+
+
+# Enable or Start Nginx
+sudo systemctl enable nginx -y
+
+sudo apt-get install python-software-properties 
+
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash - 
+
+# Install Node.js version 6.x
+sudo apt-get install nodejs -y
+
+
+
+# Install pm2
+
+sudo npm install pm2 -g 
+
+
+npm install
+
+cd app
+
+node app.js
+
+
+
+```

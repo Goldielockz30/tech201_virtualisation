@@ -324,7 +324,7 @@ next we will install these things so that our environment is where we need it to
 
 ```sudo apt-get upgrade -y```
 
-```sudo apt-get install nginx -y ```      sudo systemctl start nginx 
+```sudo apt-get install nginx -y ``` - or use     sudo systemctl start nginx 
 
 
 
@@ -358,7 +358,7 @@ we needed nodejs in order to get pm2
 ```cd app ``` again if it is nested
 ```ls```
 
-```npm install```
+```npm install```  sudo npm install pm2 -g
 ```npm -v```
 
 ```node app.js```
