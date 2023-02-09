@@ -379,6 +379,8 @@ config.vm.network "private_network", ip: "192.168.10.100"
 - To upload images onto this README
 - First save the image files in the same folder as the README.md
 - Then use the following code to upload your file   
+
+``` ![](imagename.png) ```    or 
  ``` <img src="name of the image with extension"> ```
 
 - If we type the IP address in the web browser now we will get an error message

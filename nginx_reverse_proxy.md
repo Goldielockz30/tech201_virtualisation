@@ -33,3 +33,12 @@ What is Nginx's default configuration? (hint - 'sites-available' directory)
 etc/nginx/sites-available/
 
 How do you set up a Nginx reverse proxy?
+- We set up our Nginx configuration in the /etc/nginx/sites-available/default file.
+- So first inside the git bash terminal, navigate into the folder where your vagrantfile is 
+- Then nagivate into your vm 
+```cd ~ ```  then  ```  cd sample_repo ```  then ```  tech201_virtualisation```
+- Then enter your virtual machine with ```  vagrant ssh ```
+- Open the file for editing
+``` sudo nano /etc/nginx/sites-available/default```
+![](sites-available.png)  
+
