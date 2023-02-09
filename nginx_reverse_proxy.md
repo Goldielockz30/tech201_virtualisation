@@ -30,6 +30,6 @@ Common uses for proxies are:
  
 What is Nginx's default configuration? (hint - 'sites-available' directory)
 
-http://192.168.10.100:3000/
+etc/nginx/sites-available/
 
 How do you set up a Nginx reverse proxy?
