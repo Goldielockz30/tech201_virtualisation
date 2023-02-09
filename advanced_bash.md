@@ -94,7 +94,7 @@ http://www.mysite.com/myfolder/subfolder/sub/sub2/page1.html
 /Folder1/Folder2/file.txt
 
 
-``` cd / cd ``` to home we can do that from the root
+``` cd / ```cd  to home we can do that from the root
 
 
  ``` vagrant ssh ```  to go into linux terminal
