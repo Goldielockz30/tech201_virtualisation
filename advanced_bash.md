@@ -204,12 +204,7 @@ u - user
 g - group  
 o - other  
 
-owner - group - others  
-			       read    write    Execute  
-
-Setting:            0       0        0
-Binary Value:  
-			        4        2        1
+<img src="permissions.png">
 
 4 + 2  + 1 = 7
 777 -> All permissions for all users/groups/other
