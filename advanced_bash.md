@@ -51,153 +51,150 @@ uname -srp
 ```
 
 ####
-```
-clear to clear the screen
+
+``` clear ``` to clear the screen
 
 
-cd  = change directory
+cd  means change directory
 
-cd .ssh     = going into the .ssh
+```cd .ssh```     = going into the .ssh
 
-cd ..    = goes back out of the folder you are in
+``` cd .. ```   = goes back out of the folder you are in
 
-cd ../..    = goes up two levels
+``` cd ../.. ```    = goes up two levels
 
 
-cd /      =  to get all the way out to the root directory
+``` cd / ```   to get all the way out to the root directory
 
-cd ~       = tilda - if your root is not your home directory, this will take you to your home directory
+``` cd ~ ```   tilda - if your root is not your home directory, this will take you to your home directory
 
-ls  = shows you the files that are inside where you currently are
+``` ls ``` shows you the files that are inside where you currently are
 
-ls -l  = l means long format, this will tell you the permissions on the files and folders that are within your folder
-```
+``` ls -l ``` l means long format, this will tell you the permissions on the files and folders that are within your folder
+
 
 absolute path is from the root  of the machine
 
 relative path is where it is from where you are now
 
+### Absolute Path
+- Linux/Mac
 
-# Linux/Mac
-Absolute Path
 /users/username/Documents/myfile.txt
 
-# Windows
+- Windows
 
 C:\users\username\Documents\myfilemtxt
 
-# Web URLs
+- Web URLs
 http://www.mysite.com/myfolder/subfolder/sub/sub2/page1.html
 
-Relative path
-
-from where we are
+### Relative path (from where we are)  
 
 /Folder1/Folder2/file.txt
 
 
-###
-cd / 
-cd home we can do that from the root
-###
-
- vagrant ssh     =  to go into linux terminal
+``` cd / ``` cd to home we can do that from the root
 
 
-touch emptyfile.txt
-ls
-
-cd ~          = takes you back to home as a user for vagrant
-nano
-
-nano myfile
-
-nano emptyfile.txt
-
-mkdir       = make directorr
-
-mkdir new_folder
+ ``` vagrant ssh ```  to go into linux terminal
 
 
-mkdir "folder"
+``` touch emptyfile.txt ```
 
+``` ls  ```
+
+``` cd ~  ``` takes you back to home as a user for vagrant 
+
+``` nano ``` 
+
+``` nano myfile.txt ```  ctrl + X to exit Y and enter to save
+
+``` nano emptyfile.txt  ``` to edit this file
+
+``` mkdir ```      make directorr
+
+``` mkdir new_folder ```
+
+
+``` mkdir "folder" ```
 
 
 to copy a file
 
-cp myfile copied_file.txt
+``` cp myfile.txt copied_file.txt ```
 
-cp myfile new_folder/copied_myfile.txt
+``` cp myfile.txt new_folder/copied_myfile.txt ```
 
-cd new_folder
+``` cd new_folder ```
 
-ls
+``` ls ```
 
-cat copided_myfile.txt
+``` cat copied_myfile.txt ```
 
-cd new_folder
+``` cd new_folder ```
 
 
-cd ..
+``` cd .. ```
 
-cp -rf new_folder new_folder2     = recursive , everything within the folder 
+``` cp -rf new_folder new_folder2  ``` r = recursive , everything within the folder 
 
 
 home directory
 
-nana new_file.txt        to create new file
+``` nano new_file.txt  ```      to create new file
 
 
-rsync -r new_folder new_folder2
+``` rsync -r new_folder new_folder2 ```
 
 
 to move a file two folders along
-cd new_folder
-mv myfile.txt ../new_folder
+``` cd new_folder ```
+``` mv myfile.txt ../new_folder ```
 
 
 
 to delete files
 
-rm      = delete immediately without checking
+``` rm  ``` this will delete immediately without checking
 
-rm new_file.txt
+``` rm new_file.txt ```
 
-r means recursive
+r means recursive   
 f is to force
 
 to delete a folder and everything inside
 
-rm -rf new_folder     = never do this    = to delete everything inside the folder 
-ls
+``` rm -rf new_folder ```  to delete everything inside the folder    
+``` rm -rf ``` never do this  
+```ls```
 
-pwd     = this tells you where you currently are
+``` pwd ``` this tells you where you currently are
 
-rm --help
+``` rm --help ```
 
-man ls      = this gives you a detailed look at all the different things you can do    put this into readme
+``` man ls  ``` this gives you a detailed look at all the different things you can do    put this into readme
 
-man -k change     = this will bring up commands that have the change keyword
-man -k log        = same
+``` man -k change ``` this will bring up commands that have the change keyword
+``` man -k log  ```this will do the same for log
 
 to search use grep , looking for the word test
 
-grep test  
+``` grep test  ```
 
-grep test *       = search in all files in this folder
+``` grep test * ```      search in all files in this folder
 
-grep test * -R     = It tells linux to search the whole folder for all instances and also search all the folders 
-within this folder 
+``` grep test * -R ```   It tells linux to search the whole folder for all instances and also search all the folders within this folder 
 
 
-ctrl + c     =    if it hangs up
+``` ctrl + c ```    if it hangs up o rlocks you out because of the previous command
 
-ls f*      = show me only files in folders with f
-ls t*      =
+``` ls f* ``` show me only files in folders with f
+``` ls t* ```     show me only files in folders with t
 
-ls file*    =
+``` ls file*  ```  show me only files in folders with file
 
-#####
+
 
 # Linux permissions:
 
@@ -209,60 +206,53 @@ g - group
 o - other
 
 owner - group - others
-			read    write    Execute
+			       read    write    Execute
 
 Setting:            0       0        0
 Binary Value:
-			  4        2        1
+			        4        2        1
 
 4 + 2  + 1 = 7
 777 -> All permissions for all users/groups/other
 
-755
+755 = owner has all permissions, group and others can read and execute
 
-7  = all perm for the owner
-5  =  group and other can read and execute  (4 + 1)
+* 7  = all permissions for the owner
+* 5  =  group and other can read and execute  (4 + 1)
 
-541  = 
+541  = owner can read and execute, group can read, others can execute
 
-764  =
+764  = owner has all permissions, group can read and write, others can read.
 
-chmod    = to chaange permissions
+``` chmod ``` to chaange permissions
 
-ls -l testfile.txt        = given permissions
-
-
-sudo chmod u+x testfile.txt
-
-ls -l testfile.txt
+``` ls -l testfile.txt  ``` given permissions
 
 
-sude chmod u-x testfile.txt
+``` sudo chmod u+x testfile.txt ```
 
-ls -l testfile.txt
-
-sude chmod 777 testfile.txt     = give permissions to everyone
+``` ls -l testfile.txt ```
 
 
+``` sudo chmod u-x testfile.txt ```
 
+``` ls -l testfile.txt ```
 
+``` sude chmod 777 testfile.txt  ``` give permissions to everyone
 
 
 to get to task manager in linux tpye
-top
+``` top ```  
 this might lock up your terminal
-control + c to get back in 
-vagrant ssh
+``` control + c  ```to get back in 
 
 
-ps     = this will show whats happening in your current terminal
+``` vagrant ssh ```
+``` ps  ``` this will show whats happening in your current terminal
 
-ps aux     = this shows you whats going on in the whole system
+``` ps aux  ``` this shows you whats going on in the whole system
 
-
-
-
-sleep 120 &
+``` sleep 120 & ```
 
 ps
 
