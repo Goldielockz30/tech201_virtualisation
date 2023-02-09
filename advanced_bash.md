@@ -254,100 +254,96 @@ this might lock up your terminal
 
 ``` sleep 120 & ```
 
-ps
+``` ps```
 
-kill 2201
+```kill 2201 ```
 
-ps
+``` ps```
 
-sleep 120 &
+``` sleep 120 &```
 
-ps
+``` ps ```
 
-kill -9 2210
-
-
-sleep 5
-
-sleep 5 &           =   it runs it in the background so it doesnt lock you out
+``` kill -9 2210 ```
 
 
+``` sleep 5 ```
 
-sleep 120
+``` sleep 5 &     ```   it runs it in the background so it doesnt lock you out
 
-fg
+```sleep 120```
 
-ps
+```fg```
 
+```ps```
 
-ls 
+```ls ```
 
-sudo apt-get update
+```sudo apt-get update```
 
-sudo apt install tree -y
+```sudo apt install tree -y```
 
 #####
 
-we added two folders in the same folder as our vm
-app and environment
+we added two folders in the same folder as our vm   
+the folders are app and environment   
 what we want to sync and where we want to put it
 
-config.vm.synced_folder "app", "/home/vagrant/app"
+```config.vm.synced_folder "app", "/home/vagrant/app"``` add this into your vagrant file directly under the last config line
 
 then 
 
 
-vagrant up
+```vagrant up```
 
 then open gitbash as admin
 
-vagrant ssh        =    from git bash
+```vagrant ssh ```          from git bash terminal
 
 once your in ubuntu
 
-ls 
+``` ls ```
 
-this shows app
+this shows
+ app
 
-cd app
-
-
+```cd app```     
 
 from vs bash terminal
 
-cd environment x2
+``` cd environment```  x2 if it is nested
 
-cd spec-tests
+``` cd spec-tests```
 
 
-gem install bundler
+```gem install bundler```
 
-bundle
+```bundle```
 
-rake spec
+```rake spec```
 
 
 #####
 next we will install these things so that our environment is where we need it to be
 
-sudo apt-get update -y
+```sudo apt-get update -y```
 
-sudo apt-get upgrade -y
+```sudo apt-get upgrade -y```
 
-sudo apt-get install nginx -y     =  sudo systemctl start nginx 
-
-
-
-
-check web browser to make sure its working "http://192.168.10.100/"
-
-rake spec
+```sudo apt-get install nginx -y ```      sudo systemctl start nginx 
 
 
 
-sudo apt-get install python-software-properties        =   we need a particular version
 
-curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -        = once you install nodejs
+check web browser to make sure its working "http://192.168.10.100/" `
+
+```rake spec```
+
+
+
+```sudo apt-get install python-software-properties   ```       we need a particular version
+
+```curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash - ```        once you ```install nodejs```
  overwrite to this particular version
 
 
