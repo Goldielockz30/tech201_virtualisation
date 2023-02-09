@@ -197,9 +197,10 @@ f is to force
 
 # Linux permissions:
 
-r (read)  
-w (write)  
-x (execute)  
+r (read)  - The file can be opened, and its content viewed  
+w (write)  - The file can be edited, modified, and deleted  
+x (execute)  - You may execute or run the program  
+
 u - user  
 g - group  
 o - other  
