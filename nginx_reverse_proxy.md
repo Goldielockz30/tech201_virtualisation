@@ -4,7 +4,7 @@ A port is  a number assigned to uniquely identify a connection endpoint and to d
 
 What is a reverse proxy?   
 
-A reverse proxy is an application that sits in front of back-end applications and forwards client (e.g. browser) requests to those applications.
+A reverse proxy serves requests on behalf of the server.
 A reverse proxy effectively serves as a gateway between clients, users, and application servers. It handles all the access policy management and traffic routing, and it protects the identity of the server that actually processes the request.
 
 Common uses for reverse proxies are:
