@@ -23,11 +23,10 @@ curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 # Install Node.js 
 sudo apt-get install nodejs -y
 
-# Install pm2
+# Install Process Manager pm2
 sudo npm install pm2 -g 
 
-# Install Process Manager pm2
-sudo npm install
+
 
 
 

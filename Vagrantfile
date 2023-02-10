@@ -1,3 +1,4 @@
+
 Vagrant.configure("2") do |config|
   config.vm.define "app" do |app|
     app.vm.box = "ubuntu/bionic64"
