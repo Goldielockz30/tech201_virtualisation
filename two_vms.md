@@ -119,3 +119,5 @@ you should see this ```mongodb://192.168.10.150:27017/posts```
 ```node app.js```
 - Check that the database content is now availible once you refresh the browser   
 ```http://192.168.10.100:3000/posts```
+
+![](posts.png)
