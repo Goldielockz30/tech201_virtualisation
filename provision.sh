@@ -9,12 +9,11 @@ sudo apt-get upgrade -y
 sudo apt-get install nginx -y
 
 
-# Start and Enable Nginx
-sudo systemctl start nginx
+# Start or Enable Nginx
 sudo systemctl enable nginx -y
 
+
 # This will install a particular version of python
-sudo apt-get install python -y
 sudo apt-get install python-software-properties 
 
 # Overwrite nodejs to particular version

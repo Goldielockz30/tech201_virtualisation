@@ -1,7 +1,7 @@
 # To make vms in vs code 
 
 # First vagrant destroy
-
+```
 Vagrant.configure("2") do |config|
   config.vm.define "app" do |app|
     app.vm.box = "ubuntu/bionic64"
@@ -17,10 +17,10 @@ Vagrant.configure("2") do |config|
     
     database.vm.synced_folder "environment", "/home/vagrant/environment"
   end
-end
-
-vagrant up        to get the vms up and running
-vagrant status    to check the status of youur vvms
+end 
+```
+``` vagrant up ```  - to get the vms up and running
+```vagrant status ```   to check the status of youur vvms
 
 # Then ssh into the virtual machines
 
@@ -34,6 +34,9 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv D68FA50FEA3129
 
 echo "deb https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list
 
+# you shoule see this
+deb https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse
+
 # Now to update and Upgrade type in these commands
 
 # First sudo apt-get update -y   then     sudo apt-get upgrade -y
@@ -41,8 +44,8 @@ echo "deb https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse"
 
 # Now to install the database
 
-sudo apt-get install mongodb-org=3.2.20 -y
-# Then
+####?sudo apt-get install mongodb-org=3.2.20 -y
+# Then 
 sudo apt-get install -y mongodb-org=3.2.20 mongodb-org-server=3.2.20 mongodb-org-shell=3.2.20 mongodb-org-mongos=3.2.20 mongodb-org-tools=3.2.20
 
 # After installation is complete   might need to update and upgrade again
@@ -70,46 +73,49 @@ cat nano /etc/mongod.conf
 sudo systemctl restart mongod
 sudo systemctl enable mongod
 
-# Now we have to set up an environment variable to make a connection between the app to the database
+# To check if our tools have been stored correctly through provisioning
+nginx -v
+
+node -v
+
+
+
 
 # We need to go to our app VM and navigate into app
 
-cd app           -        you should see app.js
+cd app  then    ls       -        you should see app.js
 
 ## What to do if the app is still running ?
 
 Create an ennvironment variable
 
 
+
+
 # We need to tell our app where to go to get the connection and
-# How we are going to connect this is why we need a persistant env variable
+# How we are going to connect this is why we need a persistent env variable
 # our variable is called - DB_HOST=mongodb://192.168.10.150:27017/posts
 
-now we need to use this command
-export DB_HOST=mongodb://192.168.10.150      -  ip address from our data base:27017/posts
 
-printenv DB_HOST      to check if it is set up properly
+# export DB_HOST=mongodb://192.168.10.150      -  ip address from our data base:27017/posts
+export DB_HOST=mongodb://192.168.10.150:27017/posts
 
 # We need to make the variable persistent so go into
  
 sudo nano .bashrc
 
 # Then paste
-export DB_HOST=mongodb://192.168.10.150
+export DB_HOST=mongodb://192.168.10.150:27017/posts
 
 # ctrl+x to exit and y enter to exit
 
-printenv DB_HOST   - this should print out the variable if it exists
+# printenv DB_HOST      to check if it is set up properly
 
-
-npm start
-
-
-http://192.168.10.100:3000/posts
-
-ctrl + z   stop the app
+#check if anything is running
+ps
 
 node seeds/seed.js
 
+node app.js
 
-npm start
+http://192.168.10.100:3000/posts
