@@ -1,6 +1,7 @@
 # Multiple VMs
 
-- First vagrant destroy
+- First, paste this code into your vagrant file to create two VMs
+
 ```
 Vagrant.configure("2") do |config|
   config.vm.define "app" do |app|
@@ -19,6 +20,7 @@ Vagrant.configure("2") do |config|
   end
 end 
 ```
+```vagrant destroy```
 ``` vagrant up ```  - to get the vms up and running
 ```vagrant status ```   to check the status of youur vvms
 
@@ -49,7 +51,7 @@ end
 ### After installation is complete you might need to update and upgrade again
 
 
-```sudo systemctl start mongod```
+```sudo systemctl start mongod```  
 ```sudo systemctl enable mongod```
 
 ```sudo systemctl status mongod```    - status should be active(running)
@@ -68,7 +70,7 @@ end
 
 - Now to restart mongodb
 
-```sudo systemctl restart mongod```
+```sudo systemctl restart mongod```  
 ```sudo systemctl enable mongod```
 
 - To check if our tools have been stored correctly through provisioning
@@ -85,7 +87,7 @@ end
 
 - What to do if the app is still running ?
 
-```ps``` 
+```ps```   
 ```kill -9 PID```
 
 - Create an ennvironment variable
