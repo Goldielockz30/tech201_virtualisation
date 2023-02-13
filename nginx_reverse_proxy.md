@@ -42,5 +42,16 @@ How do you set up a Nginx reverse proxy?
 - Then enter your virtual machine with ```  vagrant ssh ```
 - Open the file for editing
 ``` sudo nano /etc/nginx/sites-available/default```
-![](sites-available.png)  
+![](sites_available.png)  
 
+- Scroll to find this line within the location/ block 
+```try_files $uri $uri/ =404;```
+- and replace it with 
+```proxy_pass http://localhost:3000/;```
+- To confirm the changes
+```sudo service nginx restart```
+```ps```   to check if app is running, if it is 
+``` kill -9 PID```  then run the app
+``` node app.js```
+- Now you should be able to see this page using the ip address 192.168.10.100 without the :3000 port code
+![](reverse_proxy.png)

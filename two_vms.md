@@ -121,3 +121,4 @@ you should see this ```mongodb://192.168.10.150:27017/posts```
 ```http://192.168.10.100:3000/posts```
 
 ![](posts.png)
+
