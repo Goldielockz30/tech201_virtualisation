@@ -49,7 +49,7 @@ How do you set up a Nginx reverse proxy?
 - and replace it with 
 ```proxy_pass http://localhost:3000/;```
 - To confirm the changes
-```sudo service nginx restart```
+```sudo service nginx restart```  
 ```ps```   to check if app is running, if it is 
 ``` kill -9 PID```  then run the app
 ``` node app.js```
