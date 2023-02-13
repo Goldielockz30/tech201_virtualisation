@@ -63,6 +63,7 @@ end
  ```sudo nano /etc/mongod.conf```
 
 - Once inside scroll down to # Network Interfaces and change the bindIP: to 0.0.0.0
+- Usually we would give it a specific IP address but for the purpose of this task we will use this as a default or a placeholder.
 
 - To check if it has been changed to 0.0.0.0
 
