@@ -40,7 +40,7 @@ How do you set up a Nginx reverse proxy?
 - Then nagivate into your vm 
 ```cd ~ ```  then  ```  cd sample_repo ```  then ```  tech201_virtualisation```
 - Then enter your virtual machine with ```  vagrant ssh app``` then ```cd app```
-- Open the file for editing
+- Open the file for editing  
 ``` sudo nano /etc/nginx/sites-available/default```
 ![](sites_available.png)  
 
