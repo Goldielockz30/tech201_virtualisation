@@ -37,20 +37,26 @@ vagrant file, and I will add a line also for my database provision.sh
 Step 2
 - go into your bash terminal and navigate into your app vm
 - once your are in the same location as your vagrant file
+- use the following commands to set a persistent variable ang get your app up and running.
 
-vagrant ssh app
+```vagrant ssh app```
 
-cd app
+```cd app```
 
-export DB_HOST=mongodb://192.168.10.150:27017/posts
+```export DB_HOST=mongodb://192.168.10.150:27017/posts```    create your environment variable
 
-printenv DB_HOST
+```printenv DB_HOST```   check that your variable exists
 
-nano .bashrc
+```nano .bashrc```           to create a persistant variable
 
-npm install
+```npm install```
 
-node seeds/seed.js
+```node seeds/seed.js```   make sure the database is seeded
 
-npm start
+```npm start```
+
+- Check that the database content is now availible once you refresh the browser
+http://192.168.10.100:3000/posts and you should see
+
+![](posts.png)
 
