@@ -25,7 +25,7 @@ where to get the information it needs to communicate over to virtual box.
 vagrant file, and I will add a line also for my database provision.sh
 
 
-![](vagrantfile.png)
+<img src="vagrantfile.png">
 
 
 Step 2
