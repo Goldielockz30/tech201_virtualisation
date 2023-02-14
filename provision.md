@@ -24,8 +24,8 @@ where to get the information it needs to communicate over to virtual box.
 - Now that ive moved my provision file in to my app folder I have to change the path in my 
 vagrant file, and I will add a line also for my database provision.sh
 
-![](vagrantfile.png)
 
+![](vagrantfile.png)
 
 
 Step 2
