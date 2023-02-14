@@ -35,6 +35,8 @@ vagrant file, and I will add a line also for my database provision.sh
 
 
 Step 2
+- go into your bash terminal and navigate into your app vm
+- once your are in the same location as your vagrant file
 
 vagrant ssh app
 
