@@ -21,10 +21,12 @@ created two new provision files in the environment folder.
 - Next I will update my vagrant file with the correct configuration so that it knows 
 where to get the information it needs to communicate over to virtual box.
 
-![](vagrantfile.png)
-
 - Now that ive moved my provision file in to my app folder I have to change the path in my 
 vagrant file, and I will add a line also for my database provision.sh
+
+![](vagrantfile.png)
+
+
 
 Step 2
 
