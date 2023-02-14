@@ -5,7 +5,12 @@ with the information, we need showing up
 - Now we want to provision this process so that we dont need to enter all the commands manually
 we will automate the process
 
-- first I will update my vagrant file with the correct configuration so that it knows 
+- First we need to create two seperate provision files for app and database, I have
+created two new provision files in the environment folder. 
+
+![](provision.png)
+
+- Next I will update my vagrant file with the correct configuration so that it knows 
 where to get the information it needs to communicate over to virtual box.
 
 - Now that ive moved my provision file in to my app folder I have to change the path in my 
@@ -14,11 +19,6 @@ vagrant file, and I will add a line also for my database provision.sh
 
 ![](Vagrant_file.png)
 
-
-- Next we need to create two seperate provision files for app and database, I have
-created two new provision files in the environment folder. 
-
-![](provision.png)
 
 - inside the app provision file we will set up the commands we need
 
