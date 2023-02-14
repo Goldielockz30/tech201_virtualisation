@@ -37,7 +37,7 @@ vagrant file, and I will add a line also for my database provision.sh
 Step 2
 - go into your bash terminal and navigate into your app vm
 - once your are in the same location as your vagrant file
-- use the following commands to set a persistent variable ang get your app up and running.
+- use the following commands to set a persistent variable and get your app up and running.
 
 ```vagrant ssh app```
 
